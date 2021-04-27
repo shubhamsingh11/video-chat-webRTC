@@ -1,0 +1,19 @@
+{
+  "name": "webrtc_videocall_app",
+  "version": "1.0.0",
+  "description": " React Video Chat Application using WebRTC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamsingh11/video-chat-webRTC.git"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamsingh11/video-chat-webRTC/issues"
+  },
+  "homepage": "https://github.com/shubhamsingh11/video-chat-webRTC#readme"
+}
