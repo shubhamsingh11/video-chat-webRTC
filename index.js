@@ -22,15 +22,15 @@ io.on('connection',(socket) => {   //Connection with the client : Handshake , we
     socket.emit('me', socket.id);
 
     socket.on('disconnect',() => {
-        socket.broadcast.emit("callended");
+        socket.broadcast.emit("callEnded");
     });
 
-    socket.on('calluser', ({ userToCall , signalData , from , name}) => {
-        io.to('userToCall').emit("calluser", { signal: signalData , from , name});
+    socket.on('callUser', ({ userToCall , signalData , from , name}) => {
+        io.to(userToCall).emit("calluser", { signal: signalData , from , name});
     });
     
-    socket.on('answercall', (data) => {
-        io.to(data.io).emit("callaccepted", data.signal);
+    socket.on('answerCall', (data) => {
+        io.to(data.io).emit("callAccepted", data.signal);
     })
 })
 
