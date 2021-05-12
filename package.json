@@ -4,7 +4,7 @@
   "description": " React Video Chat Application using WebRTC.",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.jshe"
+    "start" : "node index.js"
   },
   "repository": {
     "type": "git",
